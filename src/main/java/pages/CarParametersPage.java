@@ -8,21 +8,33 @@ import static com.codeborne.selenide.Selenide.$x;
 public class CarParametersPage {
 
     public SelenideElement cityInput = $x("//label[@aria-label='Город']/input");
+
     public SelenideElement brandInput = $x("//label[@aria-label='Марка']/input");
+
     public SelenideElement modelInput = $x("//label[@aria-label='Модель']/input");
+
     public SelenideElement frontDriveCheckbox = $x("(//div[contains(text(), \"Привод\")]/..//label)[1]");
+
     public SelenideElement fullDriveCheckbox = $x("(//div[contains(text(), \"Привод\")]/..//label)[2]");
+
     public SelenideElement rearDriveCheckbox = $x("(//div[contains(text(), \"Привод\")]/..//label)[3]");
+
     public SelenideElement automaticTransmissionCheckbox =
             $x("(//div[contains(text(), \"Коробка передач\")]/..//label)[1]");
+
     public SelenideElement manualTransmissionCheckbox =
             $x("(//div[contains(text(), \"Коробка передач\")]/..//label)[2]");
+
     public SelenideElement liftbackBody = $x("//div[contains(text(), 'лифтбек')]");
+
     public SelenideElement gasolineFuelType = $x("(//div[contains(text(), 'Тип топлива')]/..//label)[2]");
+
     public SelenideElement colorDropdown = $x(
             "//div[contains(text(), 'Цвет')]/..//label[@class='horizontal-filter-block__selector-current-value']");
+
     public SelenideElement submitButton =
             $x("//a[contains(@class, 'horizontal-filter-block__find-button')]");
+
 
     public void selectCity(String city) {
         cityInput.click();

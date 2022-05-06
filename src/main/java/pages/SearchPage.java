@@ -8,7 +8,9 @@ import static com.codeborne.selenide.Selenide.$;
 public class SearchPage {
 
     private final String URL = "https://yandex.ru/";
+
     public SelenideElement searchTextbox = $("input#text");
+
     public SelenideElement searchButton = $("button.button_theme_search");
 
     public void open() {
